@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReadCycle Nav</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <i class="bi bi-book text-success me-2" style="font-size: 2.8rem;"></i>
+      ReadCycle
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#BrowseBooks">BrowseBooks</a></li>
+        <li class="nav-item"><a class="nav-link" href="#HowItWorks">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Reviews">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+       <a href="#" id="signinLink" class="nav-link me-3">Sign In</a>
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="closeBtn">&times;</span>
+    <h2>Login</h2>
+    <form>
+      <div class="input-row">
+        <div class="input-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username">
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        </div>
+      </div>
+      
+      <button type="submit" style="margin-top: 10px;" class="btn btn-primary">Login</button>
+   <a href="register.html" class="btn btn-success" style="margin-top: 10px;">Register</a>
+
+    </form>
+  </div>
+</div>
+
+
+        <a href="#" class="btn btn-success">Get Started</a>
+      </div>
+    </div>
+  </div>
+</nav>
+    <section class="about">
+        <p class="h1_1">Your Books Deserve a</p>
+        <h1 class="float-text">Second Life</h1>
+        <p class="h1_1">Join thousands of book lovers buying, selling, and exchanging books for a sustainable reading
+            experience
+        </p>
+    </section>
+
+    <!-- Bootstrap 5 CDN (include in <head> if not already added) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <section class="three py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="mb-3">Why Choose ReadCycle?</h2>
+            <h5 class="mb-5 text-muted">
+                We've created the perfect ecosystem for book lovers to discover, share, and enjoy literature sustainably
+            </h5>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-3 col-sm-6">
+                   <div class="p-4 border rounded shadow-sm h-100" style="background-color: rgb(176, 226, 232);">
+                        <i class="bi bi-journals fs-1 text-success mb-3"></i>
+                        <h5 class="fw-bold mb-2">Vast Library</h5>
+                        <p class="mb-0">Discover books across every genre, from bestsellers to rare finds.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-4 border rounded shadow-sm h-100" style="background-color: rgb(176, 226, 232);">
+                        <i class="bi bi-recycle fs-1 text-success mb-3"></i>
+                        <h5 class="fw-bold mb-2">Easy Exchange</h5>
+                        <p class="mb-0">Swap books with fellow readers and save money.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-4 border rounded shadow-sm h-100" style="background-color: rgb(176, 226, 232);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#198754" class="mb-3"
+                            viewBox="0 0 16 16" role="img" aria-label="Eco Friendly Leaf Icon">
+                            <path
+                                d="M1.4 1.7c.217.289.65.84 1.725 1.274 1.093.44 2.885.774 5.834.528 2.02-.168 3.431.51 4.326 1.556C14.161 6.082 14.5 7.41 14.5 8.5q0 .344-.027.734C13.387 8.252 11.877 7.76 10.39 7.5c-2.016-.288-4.188-.445-5.59-2.045-.142-.162-.402-.102-.379.112.108.985 1.104 1.82 1.844 2.308 2.37 1.566 5.772-.118 7.6 3.071.505.8 1.374 2.7 1.75 4.292.07.298-.066.611-.354.715a.7.7 0 0 1-.161.042 1 1 0 0 1-1.08-.794c-.13-.97-.396-1.913-.868-2.77C12.173 13.386 10.565 14 8 14c-1.854 0-3.32-.544-4.45-1.435-1.124-.887-1.889-2.095-2.39-3.383-1-2.562-1-5.536-.65-7.28L.73.806z" />
+                        </svg>
+                        <h5 class="fw-bold mb-2 text-dark">Eco-Friendly</h5>
+                        <p class="mb-0 text-dark">Reduce waste by giving books a second life in new hands.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="p-4 border rounded shadow-sm h-100" style="background-color: rgb(176, 226, 232);">
+                        <i class="bi bi-shield-lock-fill fs-1 text-success mb-3"></i>
+                        <h5 class="fw-bold mb-2">Secure Payments</h5>
+                        <p class="mb-0">Buy and sell with confidence using trusted payment methods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured-section">
+        <h1>Featured Books</h1>
+        <h2>Discover your next great read from our curated collection</h2>
+
+        <div class="buttons">
+            <button class="active" onclick="filterBooks('all', this)">All Books</button>
+            <button onclick="filterBooks('academic', this)">Academic</button>
+            <button onclick="filterBooks('fiction', this)">Fiction</button>
+            <button onclick="filterBooks('nonfiction', this)">Non-fiction</button>
+        </div>
+
+        <div class="books">
+
+            <div class="book fiction">
+                <img src="./images/f1.jpg" alt="The Starving Saints book cover" />
+                <div class="title">The Starving Saints</div>
+                <div class="author">Caitlin Starling</div>
+                <div class="condition">Condition: New</div>
+            </div>
+
+            <div class="book fiction">
+                <img src="./images/f2.jpg" alt="The Names book cover" />
+                <div class="title">The Names</div>
+                <div class="author">Florence Knapp</div>
+                <div class="condition">Condition: Used</div>
+            </div>
+
+            <div class="book fiction">
+                <img src="./images/f3.jpg" alt="The Emperor of Gladness book cover" />
+                <div class="title">The Emperor of Gladness</div>
+                <div class="author">Ocean Vuong</div>
+                <div class="condition">Condition: Good</div>
+            </div>
+
+            <div class="book nonfiction">
+                <img src="./images/sp.jpg" alt="Success Principles book cover" />
+                <div class="title">Success Principles</div>
+                <div class="author">Chanakya</div>
+                <div class="condition">Condition: Good</div>
+            </div>
+
+            <div class="book nonfiction">
+                <img src="./images/wg.webp" alt="World Geography book cover" />
+                <div class="title">World Geography</div>
+                <div class="author">D. R. Khullar</div>
+                <div class="condition">Condition: Excellent</div>
+            </div>
+
+            <div class="book academic">
+                <img src="./images/m1.png" alt="Advanced Mathematics book cover" />
+                <div class="title">Advanced Mathematics</div>
+                <div class="author">R. K. Sharma</div>
+                <div class="condition">Condition: Used</div>
+            </div>
+
+            <div class="book academic">
+                <img src="./images/pgm.webp" alt="Programming book cover" />
+                <div class="title">Programming</div>
+                <div class="author">S. K. Verma</div>
+                <div class="condition">Condition: New</div>
+            </div>
+
+            <div class="book academic">
+                <img src="./images/che.jpg" alt="Chemistry Essentials book cover" />
+                <div class="title">Chemistry Essentials</div>
+                <div class="author">Priya Gupta</div>
+                <div class="condition">Condition: Good</div>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-12 col-md-4 mb-4">
+        <h5 class="fw-bold">
+          <i class="bi bi-book text-success me-2" style="font-size: 2rem;"></i>ReadCycle
+        </h5>
+        <p>Connecting book lovers worldwide through sustainable reading practices. Buy, sell, and exchange books with our thriving community.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-2 mb-4">
+        <h6 class="fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-light">Browse Books</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Sell Books</a></li>
+          <li><a href="#" class="text-decoration-none text-light">How It Works</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Pricing</a></li>
+          <li><a href="#" class="text-decoration-none text-light">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="col-6 col-md-3 mb-4">
+        <h6 class="fw-bold">Categories</h6>
+        <ul class="list-unstyled">
+          <li><a href="#fiction" class="text-decoration-none text-light">Fiction</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Non-Fiction</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Academic</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Children's Books</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Textbooks</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="col-12 col-md-3 mb-4">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-light">Help Center</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Contact Us</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Shipping Info</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Returns</a></li>
+          <li><a href="#" class="text-decoration-none text-light">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer bottom -->
+    <div class="border-top pt-3 mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 text-center text-md-start">&copy; 2025 ReadCycle. All rights reserved.</p>
+      <ul class="list-inline mb-0 text-center text-md-end">
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Terms of Service</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#" class="text-decoration-none text-light">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script>
+        function filterBooks(category, btn) {
+            document.querySelectorAll('.book').forEach(book =>
+                book.style.display = category === 'all' || book.classList.contains(category) ? 'block' : 'none'
+            );
+            document.querySelectorAll('.buttons button').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+        window.onload = () => filterBooks('all', document.querySelector('.buttons button.active'));
+
+
+
+
+
+
+    </script>
+
+<script>
+  var modal = document.getElementById("loginModal");
+  var link = document.getElementById("signinLink");
+  var closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+  // Show modal when link is clicked
+  link.onclick = function(event) {
+    event.preventDefault(); // prevent page jump
+    modal.style.display = "block";
+  }
+
+  // Close modal on X button
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Close modal if clicking outside modal
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+</body>
+
+</html>

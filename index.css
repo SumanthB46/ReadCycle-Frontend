@@ -1,0 +1,279 @@
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/diagmonds-light.png');
+    background-repeat: repeat;
+    background-size: auto;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Remove custom nav styles and rely on Bootstrap 5 navbar */
+.navbar-brand {
+    font-size: 1.9rem;
+    /* example size */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.7rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+ 
+    
+}
+.d-flex{
+    font-size: 1.3rem;
+}
+
+
+/* About section */
+.about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 24px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.about h1 {
+    font-size: 60px;
+    color: gold;
+    margin: 10px 0;
+    line-height: 1.1;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+section.three h2 {
+    font-size: 2rem;
+    color: #264653;
+    margin-bottom: 0.5rem;
+}
+
+section.three h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    max-width: 700px;
+}
+
+section.three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* This centers horizontally */
+    text-align: center;
+    /* Ensures inline text is centered */
+    padding: 2rem;
+}
+
+section i {
+    height: 100px;
+}
+
+.p-4.bg-white.border.rounded.shadow-sm.h-100:hover {
+    background-color: #e6f4ea;
+    /* light green background */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+/* BOOKS SECTION */
+.featured-section {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ffffff, #a6dad4);
+    color: #333;
+    margin: 0;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: 400;
+    margin: 10px 0 30px;
+    color: #555;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    margin: 0 8px 12px;
+    padding: 10px 18px;
+    border: 2px solid #0077cc;
+    background: white;
+    color: #0077cc;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.buttons button.active,
+.buttons button:hover {
+    background: #0077cc;
+    color: white;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.book {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.book img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    background: #eee;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.author {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.condition {
+    font-size: 0.85rem;
+    color: #0077cc;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .book img {
+        height: 220px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* Modal container */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10%;
+  padding-left: 36%;
+  padding-right: 20%;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.closeBtn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Input groups stacked */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Button container */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
